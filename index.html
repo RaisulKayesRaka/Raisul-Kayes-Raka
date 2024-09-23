@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raisul Kayes Raka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7bf271c8b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Space -->
+    <div class="h-5"></div>
+
+    <header id="header">
+        <!-- Navigation -->
+        <nav class="flex items-center justify-between w-11/12 mx-auto max-w-screen-2xl">
+            <h3 class="text-3xl sm:text-4xl font-bold">Raka.</h3>
+            <ul class="hidden sm:flex items-center gap-8">
+                <li><a href="#home" class="cursor-pointer">Home</a></li>
+                <li><a href="#projects" class="cursor-pointer">Projects</a></li>
+            </ul>
+            <div>
+                <a href="#contact"
+                    class="cursor-pointer bg-black text-white px-5 py-2 rounded-2xl hidden sm:inline">Contact</a>
+                <button class="block sm:hidden" onclick="openMenu()">
+                    <img src="./images/icons/menu.svg" alt="menu">
+                </button>
+            </div>
+
+            <!-- Side Menu -->
+            <ul id="sideMenu"
+                class="flex sm:hidden flex-col gap-4 py-20 px-10 fixed -right-48 top-0 bottom-0 w-48 z-50 h-screen bg-gray-100 transition duration-500">
+                <div class="absolute right-6 top-6" onclick="closeMenu()">
+                    <img src="./images/icons/close.svg" alt="">
+                </div>
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Space -->
+        <div class="h-10"></div>
+
+        <!-- Hero -->
+        <section id="home" class="w-11/12 mx-auto max-w-screen-2xl">
+            <div class="text-center space-y-3">
+                <img src="./images/profile.jpg" alt="" class="w-full max-w-48 mx-auto rounded-full border p-2">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Raisul Kayes Raka</h1>
+                <p class="max-w-prose mx-auto">I am a dedicated web development enthusiast with a passion for creating
+                    modern and responsive
+                    websites.</p>
+                <div class="space-x-3">
+                    <a href="https://github.com/raisulkayesraka" target="_blank" class="cursor-pointer bg-black text-white px-5 py-2 rounded-2xl inline-block hover:scale-95 duration-500">My
+                        projects</a>
+
+                    <a href="https://drive.google.com/file/d/1mWdvIoyuQVP8mI1oTRSpXJV-C-l_lwzN/view?usp=drive_link" class="cursor-pointer bg-black text-white px-5 py-2 rounded-2xl inline-block hover:scale-95 duration-500">My
+                        resume</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Space -->
+    <div class="h-16"></div>
+
+    <main>
+
+        <!-- Projects -->
+        <section id="projects" class="w-11/12 mx-auto max-w-screen-2xl">
+            <div class="text-center space-y-3">
+                <h1 class="text-2xl md:text-3xl font-bold">Projects</h1>
+                <p class="max-w-prose mx-auto">Here are some of the projects I have worked on.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="relative group border rounded-2xl p-2">
+                        <img src="./images/project1.png" alt="Project Image" class="w-full rounded-2xl">
+
+                        <!-- Overlay with button -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <a href="https://raisulkayesraka.github.io/Fitness-Website/" download target="_blank"
+                                class="cursor-pointer bg-black text-white px-5 py-2 rounded-2xl inline-block">View
+                                Project</a>
+                        </div>
+                    </div>
+                    <div class="relative group border rounded-2xl p-2">
+                        <img src="./images/project2.png" alt="Project Image" class="w-full rounded-2xl">
+
+                        <!-- Overlay with button -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <a href="https://raisulkayesraka.github.io/Rinterio-Website/" download target="_blank"
+                                class="cursor-pointer bg-black text-white px-5 py-2 rounded-2xl inline-block">View
+                                Project</a>
+                        </div>
+                    </div>
+                    <div class="relative group border rounded-2xl p-2">
+                        <img src="./images/project3.png" alt="Project Image" class="w-full rounded-2xl">
+
+                        <!-- Overlay with button -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <a href="https://raisulkayesraka.github.io/Tea-House-Website/" download target="_blank"
+                                class="cursor-pointer bg-black text-white px-5 py-2 rounded-2xl inline-block">View
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Space -->
+        <div class="h-16"></div>
+
+        <!-- Contact -->
+        <section id="contact" class="w-11/12 mx-auto max-w-screen-2xl">
+            <div class="text-center space-y-3">
+                <h1 class="text-2xl md:text-3xl font-bold">Contact me</h1>
+                <p class="max-w-prose mx-auto">I'd love to hear from you! If you have any questions, comments or
+                    feedback, please use the form below.</p>
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto">
+                    <input type="hidden" name="access_key" value="9459b27a-522d-4021-a92d-6e833c9bbd0c">
+
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <input type="text" placeholder="Enter your name" class="p-3 outline-none border rounded-2xl"
+                            required name="name">
+                        <input type="email" placeholder="Enter your email" class="p-3 outline-none border rounded-2xl"
+                            required name="email">
+                    </div>
+                    <textarea rows="6" placeholder="Enter your message"
+                        class="w-full p-4 outline-none border rounded-2xl mb-4" required name="message"></textarea>
+                    <button type="submit" download
+                        class="cursor-pointer bg-black text-white px-5 py-2 rounded-2xl inline-block hover:scale-95 duration-500">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Space -->
+    <div class="h-16"></div>
+
+    <footer class="bg-gray-100 py-5">
+        <div
+            class="w-11/12 mx-auto max-w-screen-2xl flex justify-between items-center sm:flex-row gap-2 flex-col-reverse">
+            <div>
+                <p>© 2024 Raisul Kayes Raka. All rights reserved.</p>
+            </div>
+            <div>
+                <ul class="flex items-center justify-center gap-6">
+                    <li><a href="mailto:raisulkayesofficial@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/raisulkayesraka" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://linkedin.com/in/raisulkayesraka" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://facebook.com/raisulkayesofficial" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Side Menu 
+        const sideMenu = document.querySelector("#sideMenu");
+        function openMenu() {
+            sideMenu.style.transform = "translateX(-12rem)";
+        }
+        function closeMenu() {
+            sideMenu.style.transform = "translateX(12rem)";
+        }
+    </script>
+</body>
+
+</html>
